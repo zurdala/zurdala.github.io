@@ -1,3 +1,6 @@
 +++
-title = "/now"
+title = 'Now'
+menu = "main"
 +++
+
+Hola

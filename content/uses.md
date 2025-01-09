@@ -1,3 +1,6 @@
 +++
-title = "/uses"
+title = 'Uses'
+menu = "main"
 +++
+
+Uses

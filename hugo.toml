@@ -8,7 +8,7 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = "zurdala"
 author = "zurdala"
-copyright = "Copyright © 2024, zurdala."
+copyright = "Copyright © 2025, zurdala."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
