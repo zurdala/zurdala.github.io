@@ -1,1 +1,4 @@
-{{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
+<a href="mailto:{{.Site.Params.email}}">Email me</a> |
+<a href="{{.Site.Params.mastodonUrl}}">Mastodon</a>
+{{ if ne .Site.Params.hideMadeWithLine true }}| Based in <a href=" https://github.com/janraasch/hugo-bearblog/">Hugo
+    Bear</a>{{ end }}

@@ -3,7 +3,7 @@
 baseURL = "https://me.zurdala.es"
 
 # The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
+theme = 'my-hugo-bearblog'
 
 # Basic metadata configuration for your blog.
 title = "zurdala"
@@ -23,7 +23,7 @@ tags = "/blog/:slug"
 
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
-description = "Personal website zurdala"
+description = "personal website zurdala"
 
 # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
 # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -42,7 +42,10 @@ title = "zurdala"
 
 # This theme will, by default, inject a made-with-line at the bottom of the page.
 # You can turn it off, but we would really appreciate if you don’t :-).
-# hideMadeWithLine = true
+hideMadeWithLine = false
+
+mastodonUrl = "https://masto.es/@caeruleus657"
+email = "hello@zurdala.es"
 
 # By default, this theme displays dates with a format like "02 Jan, 2006", but
 # you can customize it by setting the `dateFormat` param in your site's config

@@ -10,4 +10,8 @@ date = "{{ .Date }}"
 tags = [{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}"{{ printf "%s" $term }}",{{ end }}{{ end }}]
 +++
 
-This is a page about »{{ replace .Name "-" " " | title }}«.
+This is a page about "{{ replace .Name "-" " " | title }}".
+
+---
+
+If you have any comments, feel free to send a DM through [Mastodon](.Site.Params.mastodonUrl) or an [email]({{.Site.Params.email}}).
