@@ -33,3 +33,5 @@ Since I am currently reviewing what I use to be less dependant on centralized se
 - 🧮 Code Editor: VSCode
 - 📱 Phone Operating System: Android 14
 - 💻 PC Operating System: Ubuntu 24.10 and Windows 11
+
+This site is based in [Hugo Bear](https://github.com/janraasch/hugo-bearblog/), using the [Atkinson Hyperlegible](Https://www.brailleinstitute.org/freefont/) font.
