@@ -7,7 +7,7 @@ menu = "main"
 
 _Last updated: January 2025_
 
-I like this trend and it is one of the reasons I decided to start this site.
+I like [this trend](https://nownownow.com/about) and it is one of the reasons I decided to start this site.
 
 I am currently trying to get myself less dependant of centralized services. For example, I am moving my digital accounts to my personal email using my own domain, away from Gmail.
 Same with contacts and calendars. I am using Fastmail and it is fantastic.
