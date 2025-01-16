@@ -21,7 +21,7 @@ Curious is an adjective that I usually put to myself. From history to linguistic
 I remember when I first installed Linux in my laptop 15 years ago. If I am not mistaken, it was Ubuntu 11.04, the first one with the Unity desktop (see, very nerdy).
 
 This is probably the reason I resonate so much with the open source movement, and their counterparts in science and data.
-The last part made want to deep a bit my toes into the topic of Studies of Science and Technology
+The last part made want to deep a bit my toes into the topic of Studies of Science and Technology.
 
 Some work friends frequenly joke that I am a bit like John Malkovich [here](https://www.youtube.com/watch?v=xDLvUqhwHZc). And a lot of my friends consider me a mix of an old soul and a grumpy old man.
 
