@@ -10,6 +10,7 @@ You can follow me there: https://www.goodreads.com/zurdala
 
 Below follows a list of my most recent reads as of January 2025.
 
+{{< rawhtml >}}
       <style type="text/css" media="screen">
         .gr_grid_container {
           /* customize grid container div here. eg: width: 500px; */
@@ -56,3 +57,4 @@ Below follows a list of my most recent reads as of January 2025.
 
       </div>
       <script src="https://www.goodreads.com/review/grid_widget/100918725.Recents%20reads?cover_size=medium&hide_link=&hide_title=&num_books=20&order=d&shelf=read&sort=date_read&widget_id=1737025878" type="text/javascript" charset="utf-8"></script>
+{{< /rawhtml >}}
