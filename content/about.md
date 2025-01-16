@@ -27,4 +27,4 @@ Some work friends frequenly joke that I am a bit like John Malkovich [here](http
 
 I tend to look for slow moments to read while I travel or I am in nature, alone or with my partner. In general, I enjoy to explore and wander around when I have the energy.
 
-So this is another slow corner that I got for myself. This time on the Internet.
+So this is another slow corner ("rincón" in Spanish) that I got for myself. This time on the Internet.
