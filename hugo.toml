@@ -1,15 +1,15 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = "https://me.zurdala.es"
+baseURL = "https://www.zurdala.es"
 
 # The name of this wonderful theme ;-).
 theme = 'my-hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "zurdala"
+title = "zurdala's corner"
 author = "zurdala"
 copyright = "Copyright © 2025, zurdala."
-languageCode = "en-US"
+languageCode = "en-UK"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
