@@ -1,10 +1,9 @@
 +++
-title = 'Uses'
-menu = "main"
+title = 'Default apps: 2024'
 date = "2025-01-09T12:00:00+01:00"
 +++
 
-# Uses
+# Default apps
 
 Following another trend on techie blogs, I want to post my default apps.
 Since I am currently reviewing what I use to be less dependant on centralized services and rely more on private services, this will probably change quickly.
