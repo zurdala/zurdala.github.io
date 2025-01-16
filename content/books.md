@@ -8,7 +8,37 @@ menu = "main"
 I use Goodreads (for now) to track what I read.
 You can follow me there: https://www.goodreads.com/zurdala
 
-Below follows a list of my most recent reads as of January 2025.
+Currently, I am reading:
+
+{{< rawhtml >}}
+      <style type="text/css" media="screen">
+        .gr_grid_container {
+          /* customize grid container div here. eg: width: 500px; */
+        }
+
+        .gr_grid_book_container {
+          /* customize book cover container div here */
+          float: left;
+          width: 98px;
+          height: 160px;
+          padding: 0px 0px;
+          overflow: hidden;
+        }
+      </style>
+      <div id="gr_grid_widget_1737052414">
+        <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+          <div class="gr_grid_container">
+    <div class="gr_grid_book_container"><a title="El caso Alaska Sanders" rel="nofollow" href="https://www.goodreads.com/book/show/210962762-el-caso-alaska-sanders"><img alt="El caso Alaska Sanders" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1718937654l/210962762._SX98_.jpg" /></a></div>
+  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Daniel, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
+  </div>
+
+      </div>
+      <script src="https://www.goodreads.com/review/grid_widget/100918725.reading%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=1&order=d&shelf=currently-reading&sort=date_updated&widget_id=1737052414" type="text/javascript" charset="utf-8"></script>
+
+{{< /rawhtml >}}
+
+And below, it follows a list of my most recent reads.
+
 
 {{< rawhtml >}}
       <style type="text/css" media="screen">
@@ -58,3 +88,6 @@ Below follows a list of my most recent reads as of January 2025.
       </div>
       <script src="https://www.goodreads.com/review/grid_widget/100918725.Recents%20reads?cover_size=medium&hide_link=&hide_title=&num_books=20&order=d&shelf=read&sort=date_read&widget_id=1737025878" type="text/javascript" charset="utf-8"></script>
 {{< /rawhtml >}}
+
+Drop me an email if you want to comment any books we have both read.
+I would be happy to discuss and talk about literature!
