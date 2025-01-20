@@ -54,4 +54,4 @@ And below, it follows a list of my most recent reads.
 Drop me an email if you want to comment any books we have both read.
 I am always happy to talk about books and where to find them (cozy bookshops)!
 
-_PS: If JavaScript is disabled, the cover will not appear, so it is better to head to my profile instead_
+_PS: If JavaScript is disabled, the book covers will not load, so it is better to head to my profile instead._
