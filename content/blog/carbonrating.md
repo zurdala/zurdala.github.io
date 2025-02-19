@@ -16,7 +16,7 @@ It was linking to [a post](https://mleduc.xyz/fosdem-2025-sustainability/) he ma
 In any case, I would the compilation quite insightful and it picked my interest to maybe attend the next FOSDEM if it happens during a good time for me. Definitely go check it out.
 
 But I am here to talk about carbon rating for websites.
-I noticed that the author had a little badge rating their websites carbon impact. It is provided by [websitecarbon.com](websitecarbon.com).
+I noticed that the author had a little badge rating their websites carbon impact. It is provided by [websitecarbon.com](https://www.websitecarbon.com).
 
 From the description, the way it works is by computing the resources required to transfer and load your page and estimate the equivalent electricity consumption. This is then matched to the carbon emissions, as it also considers the source of the energy. There is more information [here](https://www.websitecarbon.com/how-does-it-work/).
 
