@@ -1,7 +1,12 @@
-<ul>
-    {{ range .Data.Pages }}
-    <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-</ul>
+{{ define "main" }}
+<h1>Tags</h1>
+<content>
+    <ul>
+        {{ range .Data.Pages }}
+        <li>
+            <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</content>
+{{ end }}

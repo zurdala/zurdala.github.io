@@ -13,9 +13,6 @@
   {{ .Content }}
 </content>
 <p>
-  {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-  {{ end }}
+  {{ partial "tags.html" .}}
 </p>
-{{ partial "tags.html" .}}
 {{ end }}
