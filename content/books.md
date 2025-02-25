@@ -2,6 +2,8 @@
 title = 'Books'
 menu = "main"
 date = "2025-01-16T12:00:00+01:00"
+
+tags = ["books"]
 +++
 
 # Books

@@ -1,5 +1,5 @@
 +++
-title = "Random Thoughts 1 - On finding an open source projects to contribute to"
+title = "Random Thoughts: On finding an open source projects to contribute to"
 date = "2025-02-21T10:03:04+01:00"
 
 #
@@ -7,7 +7,7 @@ date = "2025-02-21T10:03:04+01:00"
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
-tags = []
+tags = ["random-thoughts", "open-source"]
 +++
 
 It's been a while since I wrote something here.

@@ -7,7 +7,7 @@ date = "2025-01-10T18:23:10+01:00"
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
-tags = []
+tags = ["blog"]
 +++
 
 So today I publish the first entry on this site.

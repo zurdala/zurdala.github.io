@@ -2,6 +2,8 @@
 title = 'About'
 menu = "main"
 date = "2025-01-16T21:00:00+01:00"
+
+tags = ["about", "slash-page"]
 +++
 
 # About me

@@ -1,6 +1,8 @@
 +++
 title = 'Default apps: 2024'
 date = "2025-01-09T12:00:00+01:00"
+
+tags = ["uses", "slash-page"]
 +++
 
 # Default apps
