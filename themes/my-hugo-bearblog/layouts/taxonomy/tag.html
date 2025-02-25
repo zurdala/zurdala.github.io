@@ -4,9 +4,6 @@
 <ul>
     {{ range .Data.Pages }}
     <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-    </li>
-    <li>
         <span>
             <i>
             <time datetime='{{ .Date.Format "2006-01-02" }}'>
