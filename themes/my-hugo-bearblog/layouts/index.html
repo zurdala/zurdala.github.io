@@ -1,23 +1,28 @@
 {{ define "main" }}
+
 {{ .Content }}
 
-<h2>Last updates</h2>
+<strong>Last updates</strong>
 
-<ul class="blog-posts">
-    {{ range ( first 5 ( .Site.RegularPages ) ) }}
+<ul class="posts">
+    {{ range ( first 5 ( .Site.RegularPages.ByDate.Reverse ) ) }}
     <li>
+      
       <span>
-        <i>
-          <time datetime='{{ .Date.Format "2006-01-02" }}'>
-            {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
-          </time>
-        </i>
+        <small>
+          <i>
+            <time datetime='{{ .Date.Format "2006-01-02" }}'>
+              {{ .Date.Format (default "02 Jan 2006" .Site.Params.dateFormat) }}
+            </time>
+          </i>
+        </small>
       </span>
+      &ensp;-&ensp;
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
     {{ else }}
     <li>
-      No posts yet
+      No posts yet :(
     </li>
     {{ end }}
 </ul>

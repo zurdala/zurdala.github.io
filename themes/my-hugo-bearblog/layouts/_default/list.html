@@ -3,16 +3,19 @@
   {{ if .Data.Singular }}
   <h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
   <small>
-    <a href="{{ "blog" | relURL }}">Remove filter</a>
+    <a href="{{ " blog" | relURL }}">Remove filter</a>
   </small>
   {{ end }}
-  <ul class="blog-posts">
-    {{ range .Pages }}
+
+  {{ range .Pages.GroupByDate "2006" }}
+  <h1>{{ .Key }}</h1>
+  <ul class="posts">
+    {{ range .Pages.ByDate.Reverse }}
     <li>
       <span>
         <i>
           <time datetime='{{ .Date.Format "2006-01-02" }}'>
-            {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+            {{ .Date.Format (default "02 Jan 2006" .Site.Params.dateFormat) }}
           </time>
         </i>
       </span>
@@ -20,20 +23,23 @@
     </li>
     {{ else }}
     <li>
-      No posts yet
+      No posts in {{.Key}}
     </li>
     {{ end }}
   </ul>
+  {{ end }}
+
+
   <div style="padding-bottom: 8ex;"></div>
   {{ if .Data.Singular }}
   {{else}}
-    <small>
-      <div>
-        {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
-        {{ end }}
-      </div>
-    </small>
-    {{ end }}
+  <small>
+    <div>
+      {{ range .Site.Taxonomies.tags }}
+      <a href="{{ .Page.Permalink }}">#{{ lower .Page.Title }}</a>&nbsp;
+      {{ end }}
+    </div>
+  </small>
+  {{ end }}
 </content>
 {{ end }}

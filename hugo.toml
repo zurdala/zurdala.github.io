@@ -6,10 +6,10 @@ baseURL = "https://www.zurdala.es"
 theme = 'my-hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "zurdala's corner"
+title = "/home/zurdala"
 author = "zurdala"
 copyright = "Copyright © 2025, zurdala."
-languageCode = "en-UK"
+languageCode = "en"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
@@ -18,7 +18,7 @@ enableRobotsTXT = true
 # disableKinds = ["taxonomy"]
 # ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
-blog = "/:slug/"
+blog = "/blog/:slug/"
 tags = "/tags/:slug"
 
 [params]
@@ -38,14 +38,14 @@ images = ["images/share.png"]
 # Another "title" :-). This one is used as the site_name on the Hugo's internal
 # opengraph structured data template.
 # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-title = "zurdala's corner"
+title = "/home/zurdala"
 
 # This theme will, by default, inject a made-with-line at the bottom of the page.
 # You can turn it off, but we would really appreciate if you don’t :-).
 hideMadeWithLine = true
 
 mastodonUrl = "https://masto.es/@caeruleus657"
-email = "hello@zurdala.es"
+email = "something something at zurdala.es"
 
 # By default, this theme displays dates with a format like "02 Jan, 2006", but
 # you can customize it by setting the `dateFormat` param in your site's config
