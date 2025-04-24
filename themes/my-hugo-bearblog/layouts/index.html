@@ -9,15 +9,12 @@
     <li>
       
       <span>
-        <small>
           <i>
             <time datetime='{{ .Date.Format "2006-01-02" }}'>
               {{ .Date.Format (default "02 Jan 2006" .Site.Params.dateFormat) }}
             </time>
           </i>
-        </small>
       </span>
-      &ensp;-&ensp;
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
     {{ else }}
