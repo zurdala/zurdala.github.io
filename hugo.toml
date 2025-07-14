@@ -6,7 +6,7 @@ baseURL = "https://www.zurdala.es"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Cuaderno de bitácora de Dani."
+title = "zurdeando."
 author = "zurdala"
 copyright = "Copyright © 2025, zurdala."
 languageCode = "en"

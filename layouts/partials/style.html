@@ -1,6 +1,8 @@
 <style>
-    @import url(https://fonts.bunny.net/css?alegreya-sans:400);
+    @import url(https://fonts.bunny.net/css?alegreya-sans:400,700);
+    @import url(https://fonts.bunny.net/css?alegreya-sans-sc:400,700);
     @import url(https://fonts.bunny.net/css?family=alegreya:400,700);
+    @import url(https://fonts.bunny.net/css?family=alegreya-sc:400,700);
 
     :root {
         --nord0-polar-night1: #2e3440;
@@ -75,13 +77,45 @@
     h6 {
         font-family: var(--font-main);
         color: var(--heading-color);
+        font-variant: small-caps;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: inherit;
+        font-variant: inherit;
+        font-weight: 700;
+    }
+
+    h6 {
+        font-variant: inherit;
+        font-size: inherit;
+        font-style: oblique;
+        font-weight: 400;
     }
 
     a.title {
         color: var(--text-color);
         font-size: larger;
         font-weight: 700;
-        text-decoration-line:overline;
+        text-decoration-line: overline;
+        font-variant: small-caps;
+        font-family: var(--font-secondary);
     }
 
     a {
@@ -226,7 +260,7 @@
     time {
         font-family: inherit;
         font-size: inherit;
-        font-style: italic;
+        font-variant: small-caps;
     }
 
     mark {

@@ -23,12 +23,12 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+# H1 Title 1
+## H2 Title 2
+### H3 Title 3
+#### H4 Title 4
+##### H5 Title 5
+###### H6 Title 6
 
 ## Paragraph
 

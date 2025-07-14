@@ -2,7 +2,7 @@
 
 {{ .Content }}
 
-<strong>Last updates</strong>
+<h4>Last updates</h4>
 
 <ul class="blog-posts">
     {{ range ( first 5 ( .Site.RegularPages.ByDate.Reverse ) ) }}

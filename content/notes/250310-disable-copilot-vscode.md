@@ -5,6 +5,8 @@ date = "2025-03-10T11:40:00+01:00"
 tags = ["dev"]
 +++
 
+# How to disable Copilot in VSCode
+
 To disable Copilot in VSCode, a couple of things need to be added to the `settings.json`:
 
 ```json
