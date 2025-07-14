@@ -1,16 +1,27 @@
 <style>
+    /*@import url(https://fonts.bunny.net/css?alegreya-sans:400);*/
+    @import url(https://fonts.bunny.net/css?family=alegreya:400,700);
+
+    :root {
+        --light-color: #eceff4;
+        --dark-color: #2e3440;
+        --link-color: #5e81ac;
+    }
+
+
     body {
-        font-family: "Hack", monospace;
-        font-size: 15px;
+        font-family: 'Alegreya', serif;
+        /*font-family: 'Alegreya Sans', sans-serif;*/
+        font-size: 20px;
         margin: auto;
         padding: 20px;
         max-width: 840px;
         text-align: left;
-        background-color: #e5f0e7;
+        background-color: var(--light-color);
         word-wrap: break-word;
         overflow-wrap: break-word;
         line-height: 1.5;
-        color: #14171c;
+        color: var(--dark-color);
     }
 
     h1,
@@ -21,7 +32,7 @@
     h6,
     strong,
     b {
-        color: #222;
+        color: var(--dark-color);
     }
 
     h1,
@@ -33,16 +44,32 @@
         font-size: 1.1em;
     }
 
-    h1::before { content: '# '; }
-    h2::before { content: '## '; }
-    h3::before { content: '### '; }
-    h4::before { content: '#### '; }
-    h5::before { content: '##### '; }
-    h6::before { content: '###### '; }
+    /*h1::before {
+        content: '# ';
+    }
+
+    h2::before {
+        content: '## ';
+    }
+
+    h3::before {
+        content: '### ';
+    }
+
+    h4::before {
+        content: '#### ';
+    }
+
+    h5::before {
+        content: '##### ';
+    }
+
+    h6::before {
+        content: '###### ';
+    }*/
 
     a {
-        color: #1D3423;
-        /*color: #ff5e6c;*/
+        color: var(--link-color);
     }
 
     .title {
@@ -51,7 +78,7 @@
     }
 
     .title span {
-        font-weight: 400;
+        font-weight: 700;
     }
 
     nav a {
@@ -145,8 +172,8 @@
 
     @media (prefers-color-scheme: dark) {
         body {
-            background-color: #2e3440;
-            color: #e5e9f0;
+            background-color: var(--dark-color);
+            color: var(--light-color);
         }
 
         h1,
@@ -157,11 +184,11 @@
         h6,
         strong,
         b {
-            color: #eee;
+            color: var(--light-color);
         }
 
         a {
-            color: #BEE3DB;
+            color: var(--link-color);
         }
 
         code {
