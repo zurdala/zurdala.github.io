@@ -3,7 +3,7 @@
 baseURL = "https://www.zurdala.es"
 
 # The name of this wonderful theme ;-).
-theme = 'my-hugo-bearblog'
+theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
 title = "Dani's corner"
