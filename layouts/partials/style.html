@@ -1,5 +1,5 @@
 <style>
-    /*@import url(https://fonts.bunny.net/css?alegreya-sans:400);*/
+    @import url(https://fonts.bunny.net/css?alegreya-sans:400);
     @import url(https://fonts.bunny.net/css?family=alegreya:400,700);
 
     :root {
@@ -20,65 +20,51 @@
         --nord14-aurora-green: #a3be8c;
         --nord15-aurora-purple: #b48ead;
 
-        --color-primary-light: var(--nord0-polar-night1);
-        --color-secondary-light: var(--nord6-snow-storm2);
-        --color-link-light: var(--nord10-frost4);
-        --color-primary-dark: var(--nord6-snow-storm3);
-        --color-secondary-dark: var(--nord0-polar-night1);
-        --color-link-dark: var(--nord9-frost3);
+        --width: 720px;
+        --hfooter: 40px;
+        --font-main: Alegreya, serif;
+        --font-secondary: Alegreya Sans, sans-serif;
+        --font-scale: 15pt;
+
+        /* light theme*/
+        --background-color: var(--nord6-snow-storm3);
+        --heading-color: var(--nord0-polar-night2);
+        --text-color: var(--nord0-polar-night1);
+        --link-color: var(--nord10-frost4);
+        --visited-color: var(--nord15-aurora-purple);
+        --code-background-color: var(--nord5-snow-storm2);
+        --code-color: var(--text-color);
+        --blockquote-color: var(--nord5-snow-storm2);
     }
 
-    .serif-text {
-        font-family: 'Alegreya', serif;
-        font-size: 18px;
-        /* Font size for serif */
-    }
-
-    .monospace-text {
-        font-family: 'Courier New', monospace;
-        /* Monospace font */
-        font-size: 10px;
-        /* Font size for monospace */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: var(--nord0-polar-night1);
+            --heading-color: var(--nord6-snow-storm3);
+            --text-color: var(--nord6-snow-storm3);
+            --link-color: var(--nord8-frost2);
+            --visited-color: var(--nord15-aurora-purple);
+            --code-background-color: var(--nord1-polar-night2);
+            --code-color: var(--text-color);
+            --blockquote-color: var(--nord2-polar-night3);
+        }
     }
 
     body {
-        font-family: 'Alegreya', serif;
-        /*font-family: 'Alegreya Sans', sans-serif;*/
-        font-size: 20px;
-        color: var(--color-primary-light);
+        font-family: var(--font-main);
+        font-size: var(--font-scale);
         margin: auto;
         padding: 20px;
-        max-width: 840px;
+        max-width: var(--width);
         text-align: left;
+        background-color: var(--background-color);
         word-wrap: break-word;
         overflow-wrap: break-word;
         line-height: 1.5;
-        /*background-color: var(--color-secondary-light);
-        background-image: radial-gradient(var(--nord3-polar-night4) 0.5px, transparent 1px);
-        background-size: 1.5em 1.5em;
-        background-position: 0px 0px;*/
-        min-height: calc(100vh - 40px);
+        color: var(--text-color);
+        min-height: calc(100vh - var(--hfooter));
         display: flex;
         flex-direction: column;
-    }
-
-    main {
-        flex: 1;
-    }
-
-    footer {
-        min-height: 40px;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-        color: var(--color-primary-light);
     }
 
     h1,
@@ -87,36 +73,48 @@
     h4,
     h5,
     h6 {
-        font-size: 1.1em;
+        font-family: var(--font-main);
+        color: var(--heading-color);
+    }
+
+    a.title {
+        color: var(--text-color);
+        font-size: larger;
+        font-weight: 700;
     }
 
     a {
-        color: var(--color-link-light);
-    }
-
-    .title {
+        color: var(--link-color);
+        cursor: pointer;
         text-decoration: none;
-        border: 0;
     }
 
-    .title span {
-        font-weight: 700;
+    a:hover {
+        text-decoration: underline;
     }
 
     nav a {
         margin-right: 10px;
     }
 
-    textarea {
-        width: 100%;
-        font-size: 16px;
+    strong,
+    b {
+        color: var(--text-color);
     }
 
-    input {
-        font-size: 16px;
+    button {
+        margin: 0;
+        cursor: pointer;
     }
 
-    content {
+    time {
+        font-family: monospace;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    main {
+        flex: 1;
         line-height: 1.6;
     }
 
@@ -124,31 +122,51 @@
         width: 100%;
     }
 
+    hr {
+        border: 0;
+        border-top: 1px dashed;
+    }
+
     img {
         max-width: 100%;
     }
 
     code {
-        padding: 2px 5px;
-        background-color: var(--nord4-snow-storm1);
+        padding: 1px;
+        font-style: monospace;
+        font-size: 0.8em;
+        background-color: var(--code-background-color);
     }
 
     pre code {
-        color: #222;
+        color: var(--code-color);
+        background-color: var(--code-background-color);
         display: block;
         padding: 20px;
         white-space: pre-wrap;
         overflow-x: auto;
+        border-color: var(--code-color);
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
     }
 
     div.highlight pre {
         background-color: initial;
         color: initial;
+        border-color: var(--code-color);
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
     }
 
     div.highlight code {
         background-color: unset;
         color: unset;
+        border-color: var(--code-color);
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
     }
 
     blockquote {
@@ -157,85 +175,88 @@
         padding-right: 10px;
         padding-top: 0.5px;
         padding-bottom: 0.5px;
-        border-left: 5px solid var(--nord15-aurora-purple);
-        background-color: var(--nord4-snow-storm1);
+        border-left: 3px solid var(--nord15-aurora-purple);
+        background-color: var(--blockquote-color);
         font-style: italic;
     }
 
     footer {
         padding-top: 25px;
         padding-bottom: 25px;
+        text-align: left;
+        min-height: var(--hfooter);
     }
 
     footer a {
-        margin-right: 8px;
+        margin-right: 10px;
     }
 
-    .helptext {
-        color: #777;
-        font-size: small;
+    .title:hover {
+        text-decoration: none;
     }
 
-    .errorlist {
-        color: var(--nord13-aurora-yellow);
-        font-size: small;
+    .title h1 {
+        font-size: 1.5em;
     }
 
-    /* blog posts */
-    ul.posts {
+    .inline {
+        width: auto !important;
+    }
+
+
+    /* blog post list */
+    ul.blog-posts {
         list-style-type: none;
         padding: unset;
     }
 
-    ul.posts li {
+    ul.blog-posts li {
         display: flex;
     }
 
-    ul.posts li span {
+    ul.blog-posts li span {
         flex: 0 0 120px;
     }
 
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: var(--color-secondary-dark);
-            color: var(--color-primary-dark);
-        }
+    ul.blog-posts li a:visited {
+        color: var(--visited-color);
+    }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        strong,
-        b {
-            color: var(--color-primary-dark);
-        }
+    time {
+        font-family: inherit;
+        font-size: inherit;
+        font-style: italic;
+    }
 
-        a {
-            color: var(--color-link-dark);
-        }
+    mark {
+        background-color: var(--nord13-aurora-yellow);
+        padding: 0px 2px;
+    }
 
-        code {
-            background-color: var(--nord3-polar-night4);
-        }
+    kbd {
+        --kbd-color-background: var(--code-background-color);
+        --kbd-color-text: var(--code-text-color);
+        --kbd-color-border: grey;
 
-        pre code {
-            color: #ddd;
-        }
+        background-color: var(--kbd-color-background);
+        color: var(--kbd-color-text);
+        border-radius: 0.25rem;
+        border: 1px solid var(--kbd-color-border);
+        box-shadow: 0 2px 0 1px var(--kbd-color-border);
+        cursor: default;
+        font-family: monospace;
+        font-size: 0.8em;
+        line-height: 1;
+        min-width: 0.75rem;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        padding: 2px;
+        top: -1px;
 
-        blockquote {
-            background-color: var(--nord3-polar-night4);
-        }
-
-        textarea,
-        input {
-            background-color: #252525;
-            color: #ddd;
-        }
-
-        .helptext {
-            color: #aaa;
+        &:hover {
+            box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
+            top: 1px;
         }
     }
 </style>

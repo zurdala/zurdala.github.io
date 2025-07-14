@@ -9,7 +9,7 @@
 
   {{ range .Pages.GroupByDate "2006" }}
   <h1>{{ .Key }}</h1>
-  <ul class="posts">
+  <ul class="blog-posts">
     {{ range .Pages.ByDate.Reverse }}
     <li>
       <span>

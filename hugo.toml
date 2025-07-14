@@ -52,8 +52,18 @@ email = "something something at zurdala.es"
 # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
 # for details. An example TOML config that uses [ISO
 # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
-# dateFormat = "2006-01-02"
+dateFormat = "02 Jan 2006"
 
 [markup]
-  [markup.highlight]
-    style = 'nord'
+[markup.highlight]
+style = 'nord'
+[markup.goldmark]
+[markup.goldmark.extensions.extras]
+[markup.goldmark.extensions.extras.mark]
+enable = true
+[markup.goldmark.extensions.extras.subscript]
+enable = true
+[markup.goldmark.extensions.extras.superscript]
+enable = true
+[markup.goldmark.renderer]
+unsafe = true
