@@ -10,11 +10,11 @@ tags = [
 
 # Markdown Syntax Guide
 
-For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
-
-Taken from [the reference published in the base of my theme](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/content/blog/markdown-syntax.md).
+*Taken from [the reference published in the base of my theme](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/content/blog/markdown-syntax.md).*
 
 ---
+
+For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 <!--more-->
