@@ -3,25 +3,60 @@
     @import url(https://fonts.bunny.net/css?family=alegreya:400,700);
 
     :root {
-        --light-color: #eceff4;
-        --dark-color: #2e3440;
-        --link-color: #5e81ac;
+        --nord0-polar-night1: #2e3440;
+        --nord1-polar-night2: #3b4252;
+        --nord2-polar-night3: #434c5e;
+        --nord3-polar-night4: #4c566a;
+        --nord4-snow-storm1: #d8dee9;
+        --nord5-snow-storm2: #e5e9f0;
+        --nord6-snow-storm3: #eceff4;
+        --nord7-frost1: #8fbcbb;
+        --nord8-frost2: #88c0d0;
+        --nord9-frost3: #81a1c1;
+        --nord10-frost4: #5e81ac;
+        --nord11-aurora-red: #bf616a;
+        --nord12-aurora-orange: #d08770;
+        --nord13-aurora-yellow: #ebcb8b;
+        --nord14-aurora-green: #a3be8c;
+        --nord15-aurora-purple: #b48ead;
+
+        --color-primary-light: var(--nord0-polar-night1);
+        --color-secondary-light: var(--nord6-snow-storm2);
+        --color-link-light: var(--nord10-frost4);
+        --color-primary-dark: var(--nord6-snow-storm3);
+        --color-secondary-dark: var(--nord0-polar-night1);
+        --color-link-dark: var(--nord9-frost3);
     }
+
 
 
     body {
         font-family: 'Alegreya', serif;
         /*font-family: 'Alegreya Sans', sans-serif;*/
         font-size: 20px;
+        color: var(--color-primary-light);
         margin: auto;
         padding: 20px;
         max-width: 840px;
         text-align: left;
-        background-color: var(--light-color);
         word-wrap: break-word;
         overflow-wrap: break-word;
         line-height: 1.5;
-        color: var(--dark-color);
+        /*background-color: var(--color-secondary-light);
+        background-image: radial-gradient(var(--nord3-polar-night4) 0.5px, transparent 1px);
+        background-size: 1.5em 1.5em;
+        background-position: 0px 0px;*/
+        min-height: calc(100vh - 40px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    footer {
+        min-height: 40px;
     }
 
     h1,
@@ -32,7 +67,7 @@
     h6,
     strong,
     b {
-        color: var(--dark-color);
+        color: var(--color-primary-light);
     }
 
     h1,
@@ -44,32 +79,8 @@
         font-size: 1.1em;
     }
 
-    /*h1::before {
-        content: '# ';
-    }
-
-    h2::before {
-        content: '## ';
-    }
-
-    h3::before {
-        content: '### ';
-    }
-
-    h4::before {
-        content: '#### ';
-    }
-
-    h5::before {
-        content: '##### ';
-    }
-
-    h6::before {
-        content: '###### ';
-    }*/
-
     a {
-        color: var(--link-color);
+        color: var(--color-link-light);
     }
 
     .title {
@@ -108,7 +119,7 @@
 
     code {
         padding: 2px 5px;
-        background-color: #f2f2f2;
+        background-color: var(--nord4-snow-storm1);
     }
 
     pre code {
@@ -131,9 +142,9 @@
     }
 
     blockquote {
-        border-left: 1px solid #999;
-        color: #222;
-        padding-left: 20px;
+        border-left: 3px solid var(--nord15-aurora-purple);
+        background-color: var(--nord4-snow-storm1);
+        padding-left: 0px;
         font-style: italic;
     }
 
@@ -152,7 +163,7 @@
     }
 
     .errorlist {
-        color: #eba613;
+        color: var(--nord13-aurora-yellow);
         font-size: small;
     }
 
@@ -172,8 +183,8 @@
 
     @media (prefers-color-scheme: dark) {
         body {
-            background-color: var(--dark-color);
-            color: var(--light-color);
+            background-color: var(--color-secondary-dark);
+            color: var(--color-primary-dark);
         }
 
         h1,
@@ -184,15 +195,15 @@
         h6,
         strong,
         b {
-            color: var(--light-color);
+            color: var(--color-primary-dark);
         }
 
         a {
-            color: var(--link-color);
+            color: var(--color-link-dark);
         }
 
         code {
-            background-color: #777;
+            background-color: var(--nord3-polar-night4);
         }
 
         pre code {
@@ -200,7 +211,7 @@
         }
 
         blockquote {
-            color: #ccc;
+            background-color: var(--nord3-polar-night4);
         }
 
         textarea,

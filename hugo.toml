@@ -38,7 +38,7 @@ images = ["images/share.png"]
 # Another "title" :-). This one is used as the site_name on the Hugo's internal
 # opengraph structured data template.
 # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-title = "corner"
+title = "zurdala"
 
 # This theme will, by default, inject a made-with-line at the bottom of the page.
 # You can turn it off, but we would really appreciate if you don’t :-).
@@ -53,3 +53,7 @@ email = "something something at zurdala.es"
 # for details. An example TOML config that uses [ISO
 # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
 # dateFormat = "2006-01-02"
+
+[markup]
+  [markup.highlight]
+    style = 'nord'
