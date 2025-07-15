@@ -6,7 +6,7 @@ baseURL = "https://www.zurdala.es"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "zurdeando."
+title = "zurdala"
 author = "zurdala"
 copyright = "Copyright © 2025, zurdala."
 languageCode = "en"
@@ -22,6 +22,8 @@ blog = "/blog/:slug/"
 tags = "/tags/:slug"
 
 [params]
+subtitle = "libreta y otras cosas"
+
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "personal website zurdala"
 
