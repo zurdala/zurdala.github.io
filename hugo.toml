@@ -22,7 +22,7 @@ blog = "/blog/:slug/"
 tags = "/tags/:slug"
 
 [params]
-subtitle = "libreta y otras cosas"
+subtitle = "libreta y varios"
 
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "personal website zurdala"
